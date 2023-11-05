@@ -65,13 +65,6 @@
                         Portfolio
                     </a>
                 </li>
-                <li class="nav-item dropdown submenu">
-                    <ul class="dropdown-menu">
-                        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-                        <li class="nav-item"><a href="blog-details.html" class="nav-link">Blog Details</a>
-                        </li>
-                    </ul>
-                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">
                         Contact
@@ -381,18 +374,6 @@
                                 <h3>Ron Gasul</h3>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="team_item wow fadeInDown" data-wow-delay="0.4s">
-                                <a href="#" class="img"><img src="assets/img/home-one/team2.jpg" alt=""></a>
-                                <h3>Idris Olabood</h3>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="team_item wow fadeInDown" data-wow-delay="0.6s">
-                                <a href="#" class="img"><img src="assets/img/home-one/team3.jpg" alt=""></a>
-                                <h3>Arian kon</h3>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -411,33 +392,10 @@
                         </div>
                         <div class="col-lg-6 offset-lg-1">
                             <form action="#" class="row contact_form wow fadeInDown" data-wow-delay="0.4s">
-                                <div class="col-lg-6 form-group">
-                                    <input type="text" class="form-control" placeholder="Your email *">
-                                </div>
-                                <div class="col-lg-6 form-group">
-                                    <input type="text" class="form-control" placeholder="Phone *">
-                                </div>
-                                <div class="col-lg-12 form-group">
-                                    <select class="form-control" id="exampleFormControlSelect1">
-                                        <option>I need to do marketing for my brand</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                </div>
                                 <div class="col-md-6">
-                                    <button type="submit" class="submit_btn">
+                                    <button type="button" class="submit_btn" id="sendMessageButton">
                                         Send Message
                                     </button>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                        <label class="form-check-label" for="defaultCheck1">
-                                            I agree to receive information
-                                        </label>
-                                    </div>
                                 </div>
                             </form>
                         </div>
@@ -445,6 +403,21 @@
                     <div class="border_bottom"></div>
                 </div>
             </section>
+        
+            <!-- JavaScript code to handle the "Send Message" button -->
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const sendMessageButton = document.getElementById("sendMessageButton");
+                    sendMessageButton.addEventListener("click", function () {
+                        // Format the URL to redirect to wa.me with a custom text message
+                        const message = "Hello, I have a question.";
+                        const whatsappURL = `https://wa.me/1234567890?text=${encodeURIComponent(message)}`;
+        
+                        // Redirect the user to the WhatsApp URL
+                        window.location.href = whatsappURL;
+                    });
+                });
+            </script>
             <!-- contact area -->
             <!-- footer area -->
             <footer class="black_bg">
