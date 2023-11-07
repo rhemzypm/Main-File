@@ -1353,6 +1353,11 @@ h6 {
   height: auto;
 }
 
+.testimonial_slider img{
+  height: 647px;
+  width: 459px;
+}
+
 .testimonial_slider .slick-dots li button {
   padding: 0px;
   border-radius: 50%;
