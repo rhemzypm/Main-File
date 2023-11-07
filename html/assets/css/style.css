@@ -1068,9 +1068,17 @@ h6 {
 }
 
 .portfolio_item {
+  height: 470px;
+  width: 370px;
   margin-bottom: 30px;
+  display: flex;
   overflow: hidden;
   cursor: pointer;
+}
+
+.portfolio_item img{
+  height: 470px;
+  width: 370px;
 }
 
 .portfolio_item .overlay_img {
