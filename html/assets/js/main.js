@@ -108,16 +108,16 @@
   }
 
   /*-------------------------------------------------------------------------------
-	  Portfolio isotope js
+	  Destination isotope js
 	-------------------------------------------------------------------------------*/
 
-  function portfolioMasonry() {
-    var portfolio = $("#portfolio_masonry,.portfolio_gallery");
-    if (portfolio.length) {
-      portfolio.imagesLoaded(function () {
+  function destinationMasonry() {
+    var destination = $("#destination_masonry,.destination_gallery");
+    if (destination.length) {
+      destination.imagesLoaded(function () {
         // images have loaded
         // Activate isotope in container
-        portfolio.isotope({
+        destination.isotope({
           layoutMode: "masonry",
           masonry: {
             columnWidth: 10,
@@ -126,7 +126,7 @@
       });
     }
   }
-  portfolioMasonry();
+  destinationMasonry();
 
   if ($(".testimonial_slider").length) {
     $(".testimonial_slider").slick({
@@ -199,7 +199,7 @@
   });
 
   //scorl animation js
-  var $single_portfolio_img = $(".portfolio_item");
+  var $single_destination_img = $(".destination_item");
   var $window = $(window);
 
   function scroll_addclass() {
@@ -207,7 +207,7 @@
     var window_top_position = $window.scrollTop();
     var window_bottom_position = window_top_position + window_height;
 
-    $.each($single_portfolio_img, function () {
+    $.each($single_destination_img, function () {
       var $element = $(this);
       var element_height = $element.outerHeight();
       var element_top_position = $element.offset().top;

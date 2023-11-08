@@ -24,7 +24,7 @@ Table of Content:
 03/ header
 04/ banner
 05/ about
-06/ portfolio
+06/ destination
 07/ team
 08/ blog
 09/ service
@@ -1053,21 +1053,21 @@ h6 {
 /*========= fact_area css =========*/
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
-/*============  portfolio_area css ==============*/
-.portfolio_area {
+/*============  destination_area css ==============*/
+.destination_area {
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-.portfolio_gallery {
+.destination_gallery {
   padding-bottom: 65px;
 }
 
-.portfolio_gallery .col-lg-4:nth-child(2) {
+.destination_gallery .col-lg-4:nth-child(2) {
   margin-top: -100px;
 }
 
-.portfolio_item {
+.destination_item {
   height: 470px;
   width: 370px;
   margin-bottom: 30px;
@@ -1076,12 +1076,12 @@ h6 {
   cursor: pointer;
 }
 
-.portfolio_item img{
+.destination_item img{
   height: 470px;
   width: 370px;
 }
 
-.portfolio_item .overlay_img {
+.destination_item .overlay_img {
   transform: translate3d(-100.5%, 0, 0);
   transform-origin: left;
   transition-duration: 1s;
@@ -1092,7 +1092,7 @@ h6 {
   z-index: 1;
 }
 
-.portfolio_item .overlay_img:before {
+.destination_item .overlay_img:before {
   content: "";
   display: block;
   position: absolute;
@@ -1110,7 +1110,7 @@ h6 {
   transition-delay: 0.4s;
 }
 
-.portfolio_item .overlay_img:after {
+.destination_item .overlay_img:after {
   content: "";
   position: absolute;
   top: 0;
@@ -1123,13 +1123,13 @@ h6 {
   z-index: -1;
 }
 
-.portfolio_item img {
+.destination_item img {
   position: relative;
   z-index: -1;
   transition: all 0.4s;
 }
 
-.portfolio_item .content {
+.destination_item .content {
   position: absolute;
   bottom: 0;
   padding: 50px;
@@ -1137,7 +1137,7 @@ h6 {
   left: 0;
 }
 
-.portfolio_item .content h3 {
+.destination_item .content h3 {
   font-size: 28px;
   color: #fff;
   line-height: 35px;
@@ -1147,79 +1147,79 @@ h6 {
   margin-bottom: 32px;
 }
 
-.portfolio_item .content .theme_btn {
+.destination_item .content .theme_btn {
   color: #fff;
   font-size: 14px;
   transition: opacity 0.2s;
   opacity: 0;
 }
 
-.portfolio_item .content .theme_btn:before {
+.destination_item .content .theme_btn:before {
   background: #fff;
   opacity: 0.4;
   transition: opacity 0.2s, width 0.5s linear;
 }
 
-.portfolio_item .content .theme_btn:hover:before {
+.destination_item .content .theme_btn:hover:before {
   opacity: 1;
 }
 
-.portfolio_item:hover .overlay_img:after {
+.destination_item:hover .overlay_img:after {
   opacity: 0.4;
 }
 
-.portfolio_item:hover img {
+.destination_item:hover img {
   transform: scale3d(1.2, 1.1, 1.3);
 }
 
-.portfolio_item:hover .content h3 {
+.destination_item:hover .content h3 {
   animation: fadeInUp 0.4s both;
   opacity: 1;
 }
 
-.portfolio_item:hover .content .theme_btn {
+.destination_item:hover .content .theme_btn {
   animation: fadeInUp 0.6s both;
   opacity: 1;
 }
 
-.portfolio_item.show .overlay_img {
+.destination_item.show .overlay_img {
   transform: translate3d(0, 0, 0);
 }
 
-.portfolio_item.show .overlay_img:before {
+.destination_item.show .overlay_img:before {
   transform: scale(0, 1);
 }
 
-/*============  portfolio_area css ==============*/
-/*============  portfolio_area_three css ==============*/
-.portfolio_area_three {
+/*============  destination_area css ==============*/
+/*============  destination_area_three css ==============*/
+.destination_area_three {
   padding-top: 200px;
 }
 
-.portfolio_area_three .sec_title {
+.destination_area_three .sec_title {
   margin-bottom: 0;
 }
 
-.portfolio_area_three .sec_title h2 {
+.destination_area_three .sec_title h2 {
   writing-mode: vertical-rl;
   transform: rotate(-180deg);
 }
 
-.portfolio_area_three .theme_btn {
+.destination_area_three .theme_btn {
   margin-top: 85px;
 }
 
-.portfolio_item_three {
+.destination_item_three {
   cursor: pointer;
 }
 
-.portfolio_item_three .img {
+.destination_item_three .img {
   position: relative;
   z-index: 1;
   overflow: hidden;
 }
 
-.portfolio_item_three .img:before {
+.destination_item_three .img:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -1232,17 +1232,17 @@ h6 {
   transition: all 0.4s linear;
 }
 
-.portfolio_item_three .img img {
+.destination_item_three .img img {
   position: relative;
   z-index: -1;
   transition: all 0.8s linear;
 }
 
-.portfolio_item_three .content {
+.destination_item_three .content {
   padding-top: 33px;
 }
 
-.portfolio_item_three .content .category {
+.destination_item_three .content .category {
   font-size: 14px;
   font-family: "Red Hat Display", sans-serif;
   color: #a8aaad;
@@ -1250,7 +1250,7 @@ h6 {
   margin-bottom: 12px;
 }
 
-.portfolio_item_three .content h3 {
+.destination_item_three .content h3 {
   font-family: "Unna", serif;
   font-size: 28px;
   line-height: 35px;
@@ -1259,37 +1259,37 @@ h6 {
   transition: all 0.2s linear;
 }
 
-.portfolio_item_three:hover .img:before {
+.destination_item_three:hover .img:before {
   opacity: 0.4;
 }
 
-.portfolio_item_three:hover img {
+.destination_item_three:hover img {
   transform: scale(1.2);
 }
 
-.portfolio_item_three:hover .content h3 {
+.destination_item_three:hover .content h3 {
   color: #6a6f75;
 }
 
-.portfolio_item_three.mt_190 {
+.destination_item_three.mt_190 {
   margin-top: 190px;
 }
 
-.portfolio_item_three.pr {
+.destination_item_three.pr {
   padding-right: 70px;
 }
 
-/*============  portfolio_area_three css ==============*/
-/*============  portfolio_area_four css ==============*/
-.portfolio_area_four {
+/*============  destination_area_three css ==============*/
+/*============  destination_area_four css ==============*/
+.destination_area_four {
   padding: 270px 0px 150px;
 }
 
-.portfolio_area_four .portfolio_item_three {
+.destination_area_four .destination_item_three {
   margin-bottom: 100px;
 }
 
-.portfolio_area_four .portfolio_item_three .content .category {
+.destination_area_four .destination_item_three .content .category {
   margin-bottom: 8px;
 }
 
@@ -1299,7 +1299,7 @@ h6 {
   animation: rotateanimation 5s infinite;
 }
 
-/*============  portfolio_area_four css ==============*/
+/*============  destination_area_four css ==============*/
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 /*=========== testimonial_slider css ============*/
@@ -2256,15 +2256,15 @@ h6 {
   background: #fff;
 }
 
-.dark_bg .portfolio_area_three {
+.dark_bg .destination_area_three {
   padding-top: 170px;
 }
 
-.dark_bg .portfolio_area_three .portfolio_item_three .content h3 {
+.dark_bg .destination_area_three .destination_item_three .content h3 {
   color: #fff;
 }
 
-.dark_bg .portfolio_area_three .portfolio_item_three:hover .content h3 {
+.dark_bg .destination_area_three .destination_item_three:hover .content h3 {
   color: #a8aaad;
 }
 

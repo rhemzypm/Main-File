@@ -8,7 +8,7 @@
         "../scss/_header.scss",
         "../scss/_slider.scss",
         "../scss/_about.scss",
-        "../scss/_portfolio.scss",
+        "../scss/_destination.scss",
         "../scss/_testimonial.scss",
         "../scss/_team.scss",
         "../scss/_blog.scss",
