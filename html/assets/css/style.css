@@ -1028,6 +1028,10 @@ h6 {
   padding-bottom: 190px;
   position: relative;
 }
+.about_img .img_two img{
+  width: 600px;
+  height: 400px;
+}
 
 .about_img .img_one,
 .about_img .img_two {
