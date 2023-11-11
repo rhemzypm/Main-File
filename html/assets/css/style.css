@@ -1137,6 +1137,11 @@ h6 {
   left: 0;
 }
 
+.destination_item_three img{
+  height: 680px;
+  width: 570px;
+}
+
 .destination_item .content h3 {
   font-size: 28px;
   color: #fff;
