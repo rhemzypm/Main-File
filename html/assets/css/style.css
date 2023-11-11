@@ -1421,6 +1421,8 @@ h6 {
   transition: all 0.5s;
   position: relative;
   z-index: -1;
+  height: 320px;
+  width: 270px;
 }
 
 .team_item h3 {
