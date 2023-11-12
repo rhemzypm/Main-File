@@ -94,16 +94,23 @@
                     </div>
                     <form action="#" class="row contact_form contact_form_two wow fadeInDown" data-wow-delay="0.4s">
                         <div class="col-lg-6 form-group">
-                            <input type="text" class="form-control" placeholder="Your Messages">
+                            <input id="name" type="text" class="form-control" placeholder="Your Name *">
+                        </div>
+                        <div class="col-lg-6 form-group">
+                            <input id="phone" type="number" class="form-control" placeholder="Phone *">
+                        </div>
+                        <div class="col-lg-6 form-group">
+                            <input name="" id="message" type="text" class="form-control" placeholder="Your Messages">
                         </div>
                         <div class="col-lg-12 form-group">
                         <div class="col-md-12">
-                            <button type="submit" class="submit_btn submit_btn_black" id="kirimpesan">
+                            <button onclick="sendToWhatsapp()" class="submit_btn submit_btn_black" id="kirimpesan">
                                 Send Message
                             </button>
                         </div>
                     </form>
                 </div>
+                <script src="whatsapp.js"></script>
                 <div class="">
                     <div class=" wow fadeInDown">
                         <div class="contact_get_info">
@@ -117,7 +124,7 @@
             </div>
         </section>
         <!-- contact area  -->
-        <script>
+        <!-- <script>
             document.addEventListener("DOMContentLoaded", function () {
                 const sendMessageButton = document.getElementById("kirimpesan");
                 sendMessageButton.addEventListener("click", function () {
@@ -129,7 +136,7 @@
                     window.location.href = whatsappURL;
                 });
             });
-        </script>
+        </script> -->
         <!-- footer area -->
         <footer class="black_bg">
             <div class="footer_top">
