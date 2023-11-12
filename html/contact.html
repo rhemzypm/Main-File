@@ -54,14 +54,6 @@
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
-                    <div class="burger_menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
                 </div>
             </div>
         </nav>
@@ -94,33 +86,7 @@
         <!-- contact area  -->
         <section class="contact_area_two">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-6 wow fadeInDown">
-                        <div class="contact_get_info">
-                            <h4>500 N Florida St,<br> TX 9007, USA.</h4>
-                            <p>phone: <a href="https://wa.me/6287862795153">+ 6287862795153</a></p>
-                            <p>email: <a href="mailto:support@Jeftour.com">support@Jeftour.com</a></p>
-                            <a href="#" class="theme_btn">Contact now <i class="arrow_right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInDown" data-wow-delay="0.2s">
-                        <div class="contact_get_info">
-                            <h4>700 California St, Suite 47000<br> San Francisco, CA 94111, USA.</h4>
-                            <p>phone: <a href="tel:6287862795153">+ 6287862795153</a> - <a href="tel:6287862795153">6287862795153
-                                </a></p>
-                            <p>email: <a href="mailto:support@Jeftour.com"> support.24@Jeftour.design</a></p>
-                            <a href="#" class="theme_btn">Contact now <i class="arrow_right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInDown" data-wow-delay="0.4s">
-                        <div class="contact_get_info">
-                            <h4>10 N Florida St, TX<br> 9007, USA.</h4>
-                            <p>phone: <a href="tel:6287862795153">+ 6287862795153</a></p>
-                            <p>email: <a href="mailto:support@Jeftour.com">support@Jeftour.com</a></p>
-                            <a href="#" class="theme_btn">Contact now <i class="arrow_right"></i></a>
-                        </div>
-                    </div>
-                </div>
+               
                 <div class="contact_info_two">
                     <div class="sec_title text-center wow fadeInDown" data-wow-delay="0.2s">
                         <h6>Contact Us</h6>
@@ -128,37 +94,42 @@
                     </div>
                     <form action="#" class="row contact_form contact_form_two wow fadeInDown" data-wow-delay="0.4s">
                         <div class="col-lg-6 form-group">
-                            <input type="text" class="form-control" placeholder="Your email *">
-                        </div>
-                        <div class="col-lg-6 form-group">
-                            <input type="text" class="form-control" placeholder="Phone *">
+                            <input type="text" class="form-control" placeholder="Your Messages">
                         </div>
                         <div class="col-lg-12 form-group">
-                            <select class="form-control" id="exampleFormControlSelect1">
-                                <option>I need to do marketing for my brand</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
-                        </div>
                         <div class="col-md-12">
-                            <button type="submit" class="submit_btn submit_btn_black">
+                            <button type="submit" class="submit_btn submit_btn_black" id="kirimpesan">
                                 Send Message
                             </button>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                <label class="form-check-label" for="defaultCheck1">
-                                    I agree to receive information
-                                </label>
-                            </div>
                         </div>
                     </form>
+                </div>
+                <div class="">
+                    <div class=" wow fadeInDown">
+                        <div class="contact_get_info">
+                            <h4>Br.tengah Lodtunduh Ubud, <br> Gianyar, Bali.</h4>
+                            <p>phone: <a href="https://wa.me/6287862795153">+ 6287862795153</a></p>
+                            <p>email: <a href="mailto:wayanjefri921@gmail.com">wayanjefri921@gmail.com</a></p>
+                            <a href="#" class="theme_btn">Contact now <i class="arrow_right"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- contact area  -->
-
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const sendMessageButton = document.getElementById("kirimpesan");
+                sendMessageButton.addEventListener("click", function () {
+                    // Format the URL to redirect to wa.me with a custom text message
+                    const message = "Hello, I have a question.";
+                    const whatsappURL = `https://wa.me/6287862795153?text=${encodeURIComponent(message)}`;
+    
+                    // Redirect the user to the WhatsApp URL
+                    window.location.href = whatsappURL;
+                });
+            });
+        </script>
         <!-- footer area -->
         <footer class="black_bg">
             <div class="footer_top">
