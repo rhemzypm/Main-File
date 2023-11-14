@@ -1550,7 +1550,7 @@ h6 {
 /*============  blog_area css  ===========*/
 /*============  blog_banner css  ===========*/
 .blog_banner {
-  padding-top: 260px;
+  padding-top: 200px;
 }
 
 .blog_banner_text {
@@ -1576,6 +1576,10 @@ h6 {
 
 .blog_single_info {
   padding-right: 100px;
+}
+.blog_single_info img {
+  width: 670px;
+  height: 400px;
 }
 
 .blog_single_info .single_post_one,
