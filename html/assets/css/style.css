@@ -2308,6 +2308,21 @@ h6 {
   display: block;
 }
 
+.j_logo {
+  height: 70px;
+  width: 180px;
+}
+
+.logo_footer {
+  height: 50px;
+  width: 150px;
+}
+
+.logo_nav {
+  height: 48px;
+  width: 148px;
+}
+
 .f_widget .f_title {
   font-size: 24px;
   line-height: 30px;
